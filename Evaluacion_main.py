@@ -47,7 +47,7 @@ while salir is False:
         case "2": #busqueda de precio
             busqueda_precio_minimo = int(input("ingrese el precio minimo: "))
             busqueda_precio_maximo = int(input("ingrese el precio maximo: "))
-            
+
             print("----------")
             for precio in stock:
                 if precio["precio"] > busqueda_precio_minimo:
@@ -69,12 +69,11 @@ while salir is False:
                 
                     stock[contador] = cambiar_precio
                     
-                    
             if contador == 0:
                 print(f"no se encontro el modelo '{modelo_buscar}'")
             contador = 0
         case "4": #salir
             print("hasta luego")
             salir = True
-        case _:
+        case _: # caso x
             print("opcion no valida, ingrese opciones del 1 al 4")
